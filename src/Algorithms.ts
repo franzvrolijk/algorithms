@@ -99,11 +99,19 @@ export const quickSort = async (array: Element[], left: number = 0, right: numbe
   if (left < index - 1) {
     await quickSort(array, left, index - 1);
   }
+
+  array.forEach((el, i) => {
+    if (i < index) el.isDone = true;
+  })
     
   if (index < right) {
     await quickSort(array, index, right);
   }
-    
+
+  array.forEach((el, i) => {
+    if (i <= right) el.isDone = true;
+  })
+  
 };
 
 export const mergeSort = async (array: Element[], left: number = 0, right: number = array.length - 1) => {
