@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/franzvrolijk.algorithms.io/static/css/main.55761fd0.css",
+    "main.js": "/franzvrolijk.algorithms.io/static/js/main.970e25f0.js",
+    "static/js/787.28cb0dcd.chunk.js": "/franzvrolijk.algorithms.io/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/franzvrolijk.algorithms.io/index.html",
+    "main.55761fd0.css.map": "/franzvrolijk.algorithms.io/static/css/main.55761fd0.css.map",
+    "main.970e25f0.js.map": "/franzvrolijk.algorithms.io/static/js/main.970e25f0.js.map",
+    "787.28cb0dcd.chunk.js.map": "/franzvrolijk.algorithms.io/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55761fd0.css",
+    "static/js/main.970e25f0.js"
+  ]
+}
