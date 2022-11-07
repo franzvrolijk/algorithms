@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { mergeSort, quickSort, someSort } from "./Algorithms";
+import { mergeSort, quickSort, someSort, stalinSort } from "./Algorithms";
 import "./App.css";
 import Element from "./Element";
 import { colors, createElementArray } from "./Utils";
@@ -17,6 +17,7 @@ function App() {
     if (functionName === "mergeSort") await mergeSort(array);
     else if (functionName === "quickSort") await quickSort(array);
     else if (functionName === "someSort") await someSort(array);
+    else if (functionName === "stalinSort") await stalinSort(array);
   };
 
   return (
@@ -29,6 +30,7 @@ function App() {
               <option value="mergeSort">Merge sort</option>
               <option value="quickSort">Quick sort</option>
               <option value="someSort">Some sort</option>
+              <option value="stalinSort">Stalin sort</option>
             </select>
           </div>
           <h2 style={{ color: colors.dark }}>Visualization delay</h2>

@@ -1,6 +1,30 @@
 import { showAndWait } from "./App";
 import Element from "./Element";
 
+export const stalinSort = async (array: Element[]) => {
+  let valueToMatchOrExceed = array[0].value;
+  let arrayLength = array.length;
+  array[0].isDone = true;
+
+  for (let i = 1; i < arrayLength; i++) {
+    if (array[i].value < valueToMatchOrExceed) {
+      array[i].primary = true;
+      await showAndWait(array);
+      
+      array.splice(i, 1);
+      i--;
+      arrayLength--;
+
+      await showAndWait(array);
+    } else {
+      valueToMatchOrExceed = array[i].value;  
+    }
+
+    array[i].isDone = true;
+    await showAndWait(array);
+  }
+};
+
 export const someSort = async (array: Element[]) => {
   for (let x = 0; x < array.length / 2; x++) {
     let maxValue = Number.NEGATIVE_INFINITY;
